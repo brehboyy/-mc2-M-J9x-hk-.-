@@ -1,5 +1,5 @@
 <?php
-require '../connexion.php';
+include '../../../inc/dbinfo.inc';
 $postdata = file_get_contents("php://input");
 
 if(isset($postdata)){

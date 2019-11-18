@@ -1,5 +1,6 @@
 <?php
-require '../connexion.php';
+include '../../../inc/dbinfo.inc';
+
 try{
     $statement = "SELECT CAT_Identifier, CAT_Name FROM categorie";
     $contenu = $pdo->prepare($statement);
